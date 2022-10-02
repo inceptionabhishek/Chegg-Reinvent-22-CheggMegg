@@ -1,0 +1,22 @@
+{
+  "name": "cheggclone",
+  "version": "1.0.0",
+  "description": "A Website where Tutor can solve student doubts and students and freely ask Them.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "Abhishek kumar",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.3",
+    "multer": "^1.4.4",
+    "nodemon": "^2.0.15"
+  }
+}
